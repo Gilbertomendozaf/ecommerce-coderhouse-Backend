@@ -15,9 +15,11 @@ const colorRouter = require("./routes/colorRoute");
 const enqRouter = require("./routes/enqRoute");
 const couponRouter = require("./routes/couponRoute");
 const uploadRouter = require("./routes/uploadRoute");
+const paymentRouter = require("./routes/paymentRoute")
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 const cors = require("cors");
+
 
 dbConnect();
 app.use(morgan("dev"));
@@ -35,6 +37,7 @@ app.use("/api/coupon", couponRouter);
 app.use("/api/color", colorRouter);
 app.use("/api/enquiry", enqRouter);
 app.use("/api/upload", uploadRouter);
+app.use("/api/payments", paymentRouter); 
 
 app.use(notFound);
 app.use(errorHandler);
