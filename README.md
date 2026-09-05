@@ -105,6 +105,7 @@ This project was built as a learning exercise and has a few limitations worth be
 - No automated tests.
 - No rate limiting on public endpoints (e.g. login, registration).
 - Query filtering on `GET /api/product` builds MongoDB queries directly from query parameters, which should be hardened against operator injection before any production use.
+- The live demo runs on Render's free tier, which spins down after 15 minutes of inactivity. The first request after idle time can take 30–50 seconds to respond while the service wakes up — this is expected behavior, not a bug.
 
 ## License
 
