@@ -20,7 +20,7 @@
     "express-async-handler": "^1.2.0",
     "express-session": "^1.18.0",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.8.0",
+    "mongodb": "^6.21.0",
     "mongoose": "^8.5.3",
     "mongoose-paginate-v2": "^1.8.3",
     "morgan": "^1.10.0",
@@ -33,5 +33,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
+  },
+  "allowScripts": {
+    "bcrypt@5.1.1": true,
+    "sharp@0.33.4": true
   }
 }
